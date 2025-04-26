@@ -19,7 +19,7 @@ function Clock() {
       <h2>Текущее время: {currentTime.toLocaleTimeString()}</h2>
       <p>Дата: {currentTime.toLocaleDateString()}</p>
 
-      {/* Проверка делимости минут на 5 */}
+     
       {isDivisibleByFive && (
         <p style={{ color: 'green', fontWeight: 'bold' }}>Время делится на 5</p>
       )}

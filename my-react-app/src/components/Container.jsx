@@ -13,18 +13,18 @@ function generateRandomName() {
 function Container() {
   const [name, setName] = useState('');
 
-  // Первый рендер: установка случайного имени
+
   useEffect(() => {
     setName(generateRandomName());
   }, []);
 
-  // Обновление имени каждые 10 секунд
+ 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setName(generateRandomName());
-    }, 10000); // 10 секунд
+    }, 10000); 
 
-    // Чистка интервала при размонтировании компонента
+    
     return () => clearInterval(intervalId);
   }, []);
 

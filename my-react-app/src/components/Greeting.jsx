@@ -5,10 +5,10 @@ function Greeting({ name }) {
 
   useEffect(() => {
     if (hasNameChanged) {
-      // Уже было изменение — не трогаем
+    
       return;
     }
-    // Первый раз — не считаем сменой имени
+    
     setHasNameChanged(true);
   }, [name]);
 
